@@ -7,16 +7,30 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SplashViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+@synthesize navmain,isstart,isselected,objMenuControllrer,isEnd;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    SplashViewController *objsplash=[[SplashViewController alloc]init];
+    navmain=[[UINavigationController alloc]initWithRootViewController:objsplash];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController=navmain;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
