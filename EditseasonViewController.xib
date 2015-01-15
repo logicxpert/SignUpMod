@@ -88,7 +88,7 @@
                     <rect key="frame" x="20" y="315" width="280" height="1"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMb-Mj-7UQ">
-                    <rect key="frame" x="7" y="37" width="40" height="40"/>
+                    <rect key="frame" x="7" y="37" width="35" height="35"/>
                     <state key="normal" backgroundImage="back_btn1.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -105,6 +105,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="245" y="171"/>
         </view>
     </objects>
     <resources>

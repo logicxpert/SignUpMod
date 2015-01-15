@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    scrollviewData.frame=CGRectMake(0, 64, 320, 568);
+    scrollviewData.frame=CGRectMake(0, 0, 320, 568);
     scrollviewData.contentSize=CGSizeMake(320, 1100);
     txtChooseName.delegate=self;
     txtWebUrl.delegate=self;
@@ -57,20 +57,20 @@
     lblto1.textColor= [UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
     lblto2.textColor= [UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
     
-    lbldoubles.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
-    lblRoundlbl.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
-    lblSingles.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
-    lblTeam11.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
-    lblTitle1.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
-    lblTitle2.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
-    lblTitle3.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
+    lbldoubles.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lblRoundlbl.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lblSingles.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lblTeam11.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lblTitle1.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
+    lblTitle2.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
+    lblTitle3.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
     
     
-    lblTitle.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
+    lblTitle.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
     
     lblGametype.textColor=  [UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
     
-    lblTitle.font=  [UIFont fontWithName:@"Futura-Medium" size:15.0];
+    lblTitle.font=  [UIFont fontWithName:@"Nunito-Regular" size:15.0];
     
     [self.view addSubview:scrollviewData];
     

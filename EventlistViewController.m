@@ -32,8 +32,8 @@
     tblList.dataSource=self;
     tblList.backgroundColor=[UIColor clearColor];
     
-    lblTitle.font=[UIFont fontWithName:@"Futura-Medium" size:18.0];
-    btnStartEvent.titleLabel.font=[UIFont fontWithName:@"Futura-Medium" size:25.0];
+    lblTitle.font=[UIFont fontWithName:@"Nunito-Regular" size:18.0];
+    btnStartEvent.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:25.0];
     [btnStartEvent setTitleColor:[UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1] forState:UIControlStateNormal];
 
     
@@ -279,9 +279,9 @@
     cell.lblEventDAte.textColor=[UIColor whiteColor];
     cell.lblEventName.textColor=[UIColor whiteColor];
     
-    [cell.lblEventName setFont:[UIFont fontWithName:@"Futura-Bold" size:20.0]];
+    [cell.lblEventName setFont:[UIFont fontWithName:@"Nunito-Bold" size:20.0]];
 
-      [cell.lblEventDAte setFont:[UIFont fontWithName:@"Futura-Normal" size:20.0]];
+      [cell.lblEventDAte setFont:[UIFont fontWithName:@"Nunito-Regular" size:20.0]];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
     if([[arrayData objectAtIndex:indexPath.row]valueForKey:@"name"]!=[NSNull null])

@@ -30,6 +30,9 @@
 		<string>FuturaTEELig.ttf</string>
 		<string>Futura-Normal.ttf</string>
 		<string>Futura-Bold.ttf</string>
+		<string>Nunito-Bold.ttf</string>
+		<string>Nunito-Light.ttf</string>
+		<string>Nunito-Regular.ttf</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

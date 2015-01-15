@@ -22,14 +22,14 @@
     currrentFrame =self.view.frame;
     
     lblto.textColor= [UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
-    lblto.font=[UIFont fontWithName:@"Futura-Medium" size:18.0];
-    lblname.font=[UIFont fontWithName:@"Futura-Medium" size:16.0];
+    lblto.font=[UIFont fontWithName:@"Nunito-Regular" size:18.0];
+    lblname.font=[UIFont fontWithName:@"Nunito-Regular" size:16.0];
     lbltitle.font=
-    [UIFont fontWithName:@"Futura-Medium" size:18.0];
+    [UIFont fontWithName:@"Nunito-Regular" size:18.0];
     
     txtUrl.delegate=self;
     txtUrl.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"-Choose game-" attributes:@{NSForegroundColorAttributeName: [UIColor darkGrayColor]}];
-    txtUrl.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
+    txtUrl.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
     
     
     // Do any additional setup after loading the view from its nib.

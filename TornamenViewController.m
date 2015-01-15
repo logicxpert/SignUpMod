@@ -23,28 +23,30 @@
     txtNotificationMessage.delegate=self;
     txtTwitterMessage.delegate=self;
     
-    lblTile.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
+    lblTile.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
     
-    lblSubTile.font= [UIFont fontWithName:@"Futura-Medium" size:15.0];
+    lblSubTile.font= [UIFont fontWithName:@"Nunito-Regular" size:13.0];
     lblSubTile.textColor=[UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1] ;
     
-    lblTile1.font= [UIFont fontWithName:@"Futura-Bold" size:10.0];
+    lblTile1.font= [UIFont fontWithName:@"Nunito-Regular" size:11.0];
     
-    lblTile2.font= [UIFont fontWithName:@"Futura-Bold" size:10.0];
-    lblTile3.font= [UIFont fontWithName:@"Futura-Bold" size:10.0];
+    lblTile2.font= [UIFont fontWithName:@"Nunito-Light" size:11.0];
+    lblTile3.font= [UIFont fontWithName:@"Nunito-Light" size:11.0];
     
     
-    lblWinner1.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner2.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner3.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner4.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner5.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner6.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner7.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
-    lblWinner8.font= [UIFont fontWithName:@"Futura-Bold" size:20.0];
+    lblWinner1.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner2.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner3.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner4.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner5.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner6.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner7.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    lblWinner8.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
     
-    lblWinners.font= [UIFont fontWithName:@"Futura-Medium" size:15.0];
-    lbllossers.font= [UIFont fontWithName:@"Futura-Medium" size:15.0];
+    lblWinners.font= [UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lbllossers.font= [UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lbllossers.textColor=[UIColor darkGrayColor];
+    
   
     
     scrData.frame=CGRectMake(0, 302, 320, 600);

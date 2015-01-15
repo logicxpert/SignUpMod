@@ -30,8 +30,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   labnew.font=[UIFont fontWithName:@"Futura-Medium" size:13.0];
-    lblTitle.font=[UIFont fontWithName:@"Futura-Medium" size:13.0];
+    
+    
+    
+    
+   labnew.font=[UIFont fontWithName:@"Nunito-Regular" size:13.0];
+    lblTitle.font=[UIFont fontWithName:@"Nunito-Regular" size:13.0];
     labnew.textColor=[UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1] ;
     txtusername.delegate=self;
     txtPassword.delegate=self;
@@ -41,17 +45,17 @@
     
     UIColor *color = [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1];
     txtusername.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Username or Email" attributes:@{NSForegroundColorAttributeName: color}];
-    txtusername.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
-    txtPassword.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
+    txtusername.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
+    txtPassword.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
     
     
     
     
     txtPassword.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{NSForegroundColorAttributeName: color}];
     
-    btnForgot.titleLabel.font=[UIFont fontWithName:@"Futura-Medium" size:13.0];
-    btnGurest.titleLabel.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
-    signup.titleLabel.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
+    btnForgot.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:13.0];
+    btnGurest.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    signup.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
 
    
     
@@ -306,7 +310,8 @@
            
             
             
-          AppDelegate *app=(AppDelegate *)[UIApplication sharedApplication].delegate;
+            [[NSUserDefaults standardUserDefaults]setObject:trimmedStringUsername forKey:@"username"];
+         AppDelegate *app=(AppDelegate *)[UIApplication sharedApplication].delegate;
             
             MenuViewController *objmenu=[[MenuViewController alloc]init];
             EventlistViewController *objEvent=[[EventlistViewController alloc]init];

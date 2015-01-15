@@ -45,21 +45,26 @@
     currentFrame=self.view.frame;
     
     txtURl.delegate=self;
-    lblupload.font=[UIFont fontWithName:@"Futura-Medium" size:13.0];
-    lblupload1.font=[UIFont fontWithName:@"Futura-Medium" size:13.0];
+    lblupload.font=[UIFont fontWithName:@"Nunito-Regular" size:13.0];
+    lblupload1.font=[UIFont fontWithName:@"Nunito-Regular" size:13.0];
 
-    lblupload2.font=[UIFont fontWithName:@"Futura-Medium" size:13.0];
+    lblupload2.font=[UIFont fontWithName:@"Nunito-Regular" size:13.0];
 
     UIColor *color = [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1];
     txtEvtname.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Event name" attributes:@{NSForegroundColorAttributeName: color}];
     
     txtURl.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@" Event Url" attributes:@{NSForegroundColorAttributeName: color}];
     
-   
+    txtEvtname.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
+    txtURl.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
+
+    
    
     lblTo.textColor= [UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
-    lblFont.font=[UIFont fontWithName:@"Futura-Medium" size:18.0];
-     lblTo.font=[UIFont fontWithName:@"Futura-Medium" size:18.0];
+    lblFont.font=[UIFont fontWithName:@"Nunito-Light" size:18.0];
+    lblFont.textColor=[UIColor whiteColor];
+    
+     lblTo.font=[UIFont fontWithName:@"Nunito-Regular" size:18.0];
     
     
 

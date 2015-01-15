@@ -37,20 +37,20 @@
     }
     [scrollView setContentSize:CGSizeMake(x, 200)];
     
-  lblTitle.font=  [UIFont fontWithName:@"Futura-CondensedExtraBold" size:15.0];
-    lblText1.font=[UIFont fontWithName:@"Futura-Medium" size:9.0];
-    lblText2.font=[UIFont fontWithName:@"Futura-Medium" size:9.0];
-    lblText3.font=[UIFont fontWithName:@"Futura-Medium" size:9.0];
+  lblTitle.font=  [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    lblText1.font=[UIFont fontWithName:@"Nunito-Regular" size:9.0];
+    lblText2.font=[UIFont fontWithName:@"Nunito-Regular" size:9.0];
+    lblText3.font=[UIFont fontWithName:@"Nunito-Regular" size:9.0];
     lbl1frame=lblText1.frame;
     lbl2frame=lblText2.frame;
     lbl3frame=lblText3.frame;
 
 
     
-    btnLogin.titleLabel.font=[UIFont fontWithName:@"FuturaTEELig" size:17.0];
-    btnSIngUp.titleLabel.font=[UIFont fontWithName:@"FuturaTEELig" size:17.0];
+    btnLogin.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:17.0];
+    btnSIngUp.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:17.0];
 
-    btnUseaasGuest.titleLabel.font=[UIFont fontWithName:@"FuturaTEELig" size:17.0];
+    btnUseaasGuest.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:17.0];
 
    
     
@@ -61,10 +61,38 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    i=0;
     
-       
+   timer = [NSTimer scheduledTimerWithTimeInterval: 4.0
+                                                  target: self
+                                                selector:@selector(onTick:)
+                                                userInfo: nil repeats:YES];
   
    
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [timer invalidate];
+    
+}
+
+-(void)onTick:(id)sender
+{
+    i++;
+    float width=i*200;
+    if(i<5)
+    {
+   [scrollView setContentOffset:CGPointMake(width,0) animated:YES];
+    }
+    else{
+        i=0;
+        float width=i*200;
+        [scrollView setContentOffset:CGPointMake(width,0) animated:YES];
+    }
+    
+    
+    
 }
 -(IBAction)actiononSignup:(id)sender
 {
@@ -177,24 +205,26 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     int pageNumber = scrollView.contentOffset.x/200;
+    
+    
     if (pageNumber==0)
     {
         lblTitle.text=@"FOLLOW YOUR HEART";
         lblText1.text=@"Follow your friends,TO's or favoritre  players to see";
         lblText2.text=@"when they are playing next and track their";
-        lblText3.text=@"tournament  progress and placements";
+        lblText3.text=@"tournament  progress and placements.";
         
-        lblText1.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText3.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText2.font=[UIFont fontWithName:@"Futura-Medium" size:9];
+        lblText1.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText3.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText2.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
     }
     else if (pageNumber==1)
     {
         lblTitle.text=@"Key Features";
         lblText3.text=@"";
-        lblText1.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText3.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText2.font=[UIFont fontWithName:@"Futura-Medium" size:9];
+        lblText1.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText3.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText2.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
         
         lblText1.text=@"Create,edit,and view seasons,events,teams&tournaments";
         lblText2.text=@"of any kind or any platform online or offline";
@@ -204,9 +234,9 @@
         lblTitle.text=@"GET NOTIFICATIONS";
         lblText1.text=@"Get notifications on upcoming events or even in";
         lblText2.text=@"tournament notifications right before a match starts on your";
-        lblText1.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText3.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText2.font=[UIFont fontWithName:@"Futura-Medium" size:9];
+        lblText1.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText3.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText2.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
         lblText3.text=@"phone,tablet,Android wear device,or Apple Watch";
        
     }
@@ -216,17 +246,17 @@
         
         lblText1.text=@"Preregister yourself, a team,or specific members of a team";
         lblText2.text=@"for any tournament";
-        lblText1.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText3.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText2.font=[UIFont fontWithName:@"Futura-Medium" size:9];
+        lblText1.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText3.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText2.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
         lblText3.text=@"";;
     }
     else if(pageNumber==4)
     {
         lblTitle.text=@"POOLS & BRACKETS";
-        lblText1.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText3.font=[UIFont fontWithName:@"Futura-Medium" size:9];
-        lblText2.font=[UIFont fontWithName:@"Futura-Medium" size:9];
+        lblText1.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText3.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
+        lblText2.font=[UIFont fontWithName:@"Nunito-Regular" size:9];
         lblText1.text=@"Automatic bracket making based on, Seeding, Teams,";
         lblText2.text=@"and locations.";
         lblText3.text=@"";

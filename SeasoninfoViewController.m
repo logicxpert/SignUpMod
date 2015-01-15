@@ -20,10 +20,10 @@
     [super viewDidLoad];
     arrayImges=[[NSMutableArray alloc]initWithObjects:@"Group-3.png",@"Group-3.png",@"Group-3.png",@"Group-3.png", nil];
     
-    lblDate.font=  [UIFont fontWithName:@"Futura-Medium" size:20.0];
+    lblDate.font=  [UIFont fontWithName:@"Nunito-Regular" size:15.0];
     tbldata.backgroundColor= [UIColor clearColor];
-    lblTitle2.font=  [UIFont fontWithName:@"Futura-Bold" size:18.0];
-    lblTitle1.font=  [UIFont fontWithName:@"Futura-Bold" size:18.0];
+    lblTitle2.font=  [UIFont fontWithName:@"Nunito-Regular" size:17.0];
+    lblTitle1.font=  [UIFont fontWithName:@"Nunito-Regular" size:17.0];
     
     
     // Do any additional setup after loading the view from its nib.
@@ -79,9 +79,9 @@
                                         reuseIdentifier:MyIdentifier];
     }
     
-    cell.imgviewPic.frame=CGRectMake(5, 5, 310, 140);
-    cell.lblEventName.frame=CGRectMake(100, 30, 250,40 );
-    cell.lblEventDAte.frame=CGRectMake(120, 60,230, 40);
+    cell.imgviewPic.frame=CGRectMake(5, 5, 310, 90);
+    cell.lblEventName.frame=CGRectMake(100, 10, 250,40 );
+    cell.lblEventDAte.frame=CGRectMake(120, 40,230, 40);
     
     cell.imgviewPic.image=[UIImage imageNamed:[arrayImges objectAtIndex:indexPath.row]];
     

@@ -139,9 +139,9 @@
     cell.lblEventDAte.textColor=[UIColor whiteColor];
     cell.lblEventName.textColor=[UIColor whiteColor];
     
-    [cell.lblEventName setFont:[UIFont fontWithName:@"Futura-Bold" size:18.0]];
+    [cell.lblEventName setFont:[UIFont fontWithName:@"Nunito-Bold" size:18.0]];
 
-      [cell.lblEventDAte setFont:[UIFont fontWithName:@"Futura-Medium" size:15.0]];
+      [cell.lblEventDAte setFont:[UIFont fontWithName:@"Nunito-Regular" size:15.0]];
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
     cell.lblEventDAte.textAlignment=NSTextAlignmentCenter;

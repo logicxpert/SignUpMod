@@ -28,7 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    lblTitle.font=[UIFont fontWithName:@"Futura-Medium" size:10.0];
+    lblTitle.font=[UIFont fontWithName:@"Nunito-Regular" size:10.0];
     txtUserrEmial.delegate=self;
     txtUsername.delegate=self;
     txtTwitterAccount.delegate=self;
@@ -40,27 +40,27 @@
     txtUserrEmial.secureTextEntry=YES;
     
     currentframe=self.view.frame;
-    lblTit.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
+    lblTit.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
     lblTit.textColor=[UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1] ;
-    btnLogin.titleLabel.font=[UIFont fontWithName:@"Futura-Medium" size:15.0];
+    btnLogin.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:15.0];
 
     
     
     UIColor *color = [UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1];
     txtUserrEmial.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Confirm Password" attributes:@{NSForegroundColorAttributeName: color}];
     
-    txtUsername.font=  [UIFont fontWithName:@"Futura-Medium" size:11.0];
-    txtUserrEmial.font=  [UIFont fontWithName:@"Futura-Medium" size:11.0];
+    txtUsername.font=  [UIFont fontWithName:@"Nunito-Regular" size:11.0];
+    txtUserrEmial.font=  [UIFont fontWithName:@"Nunito-Regular" size:11.0];
 
     
-     txtContactNumber.font= [UIFont fontWithName:@"Futura-Medium" size:11.0];
-    txtEmailid.font=  [UIFont fontWithName:@"Futura-Medium" size:11.0];
+     txtContactNumber.font= [UIFont fontWithName:@"Nunito-Regular" size:11.0];
+    txtEmailid.font=  [UIFont fontWithName:@"Nunito-Regular" size:11.0];
     
-    txtPassword.font= [UIFont fontWithName:@"Futura-Medium" size:11.0];
+    txtPassword.font= [UIFont fontWithName:@"Nunito-Regular" size:11.0];
 
-    txtTwitterAccount.font=  [UIFont fontWithName:@"Futura-Medium" size:11.0];
+    txtTwitterAccount.font=  [UIFont fontWithName:@"Nunito-Regular" size:11.0];
     
-    txtCountryCode.font= [UIFont fontWithName:@"Futura-Medium" size:11.0];
+    txtCountryCode.font= [UIFont fontWithName:@"Nunito-Regular" size:11.0];
 
     
     
@@ -256,6 +256,8 @@
         
         
         [[NSUserDefaults standardUserDefaults]setObject:content_type forKey:@"authkey"];
+        [[NSUserDefaults standardUserDefaults]setObject:trimmedStringFirstName forKey:@"username"];
+        
         AppDelegate *app=(AppDelegate *)[UIApplication sharedApplication].delegate;
         
         MenuViewController *objmenu=[[MenuViewController alloc]init];
@@ -275,6 +277,12 @@
     {
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Warning" message:[[json valueForKey:@"errorMessages"]objectAtIndex:0] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
         [alert show];
+    }
+    
+    else{
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Warning" message:[[json valueForKey:@"errorMessages"]objectAtIndex:0] delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        [alert show];
+        
     }
     
     

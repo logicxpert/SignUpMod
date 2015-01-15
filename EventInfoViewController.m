@@ -22,10 +22,10 @@
     [super viewDidLoad];
      arrayImges=[[NSMutableArray alloc]initWithObjects:@"Group-3.png",@"Group-3.png",@"Group-3.png",@"Group-3.png", nil];
     
-  lblDate.font=  [UIFont fontWithName:@"Futura-Medium" size:20.0];
+  lblDate.font=  [UIFont fontWithName:@"Nunito-Regular" size:20.0];
     tbldata.backgroundColor= [UIColor clearColor];
-    lblTitle2.font=  [UIFont fontWithName:@"Futura-Bold" size:18.0];
-    lblTitle1.font=  [UIFont fontWithName:@"Futura-Bold" size:18.0];
+    lblTitle2.font=  [UIFont fontWithName:@"Nunito-Bold" size:18.0];
+    lblTitle1.font=  [UIFont fontWithName:@"Nunito-Bold" size:18.0];
 
 
     // Do any additional setup after loading the view from its nib.
@@ -92,9 +92,9 @@
     
     
     
-    [cell.lblEventName setFont:[UIFont fontWithName:@"Futura-Bold" size:20.0]];
+    [cell.lblEventName setFont:[UIFont fontWithName:@"Nunito-Bold" size:20.0]];
     
-    [cell.lblEventDAte setFont:[UIFont fontWithName:@"Futura-Normal" size:20.0]];
+    [cell.lblEventDAte setFont:[UIFont fontWithName:@"Nunito-Regular" size:20.0]];
     
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     

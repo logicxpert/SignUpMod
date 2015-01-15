@@ -15,6 +15,8 @@
     CGRect lbl2frame;
     CGRect lbl3frame;
     NSMutableArray *arrayforImages;
+    NSTimer *timer;
+    int i;
     
     __weak IBOutlet UIPageControl *pageVIewCont;
     IBOutlet UIScrollView *scrollView;

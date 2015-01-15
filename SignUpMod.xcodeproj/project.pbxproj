@@ -64,6 +64,9 @@
 		5BF41E8A1A3DF230008A8A8E /* SignupviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF41E881A3DF230008A8A8E /* SignupviewController.xib */; };
 		5BF41E8C1A3DF3EA008A8A8E /* headBG1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF41E8B1A3DF3EA008A8A8E /* headBG1.png */; };
 		5BF41E8E1A3DF3FC008A8A8E /* sinMeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BF41E8D1A3DF3FC008A8A8E /* sinMeUp.png */; };
+		848426A91A6826BC0091FB26 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848426A61A6826BC0091FB26 /* Nunito-Bold.ttf */; };
+		848426AA1A6826BC0091FB26 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848426A71A6826BC0091FB26 /* Nunito-Light.ttf */; };
+		848426AB1A6826BC0091FB26 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848426A81A6826BC0091FB26 /* Nunito-Regular.ttf */; };
 		84CE19281A623A7B002BE3BD /* SeasonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE19261A623A7B002BE3BD /* SeasonListViewController.m */; };
 		84CE19291A623A7B002BE3BD /* SeasonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CE19271A623A7B002BE3BD /* SeasonListViewController.xib */; };
 		84CE192E1A623DF9002BE3BD /* CreateSesonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE192C1A623DF9002BE3BD /* CreateSesonViewController.m */; };
@@ -280,6 +283,9 @@
 		5BF41E881A3DF230008A8A8E /* SignupviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupviewController.xib; sourceTree = "<group>"; };
 		5BF41E8B1A3DF3EA008A8A8E /* headBG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headBG1.png; sourceTree = "<group>"; };
 		5BF41E8D1A3DF3FC008A8A8E /* sinMeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinMeUp.png; sourceTree = "<group>"; };
+		848426A61A6826BC0091FB26 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		848426A71A6826BC0091FB26 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		848426A81A6826BC0091FB26 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		84CE19251A623A7B002BE3BD /* SeasonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeasonListViewController.h; sourceTree = "<group>"; };
 		84CE19261A623A7B002BE3BD /* SeasonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeasonListViewController.m; sourceTree = "<group>"; };
 		84CE19271A623A7B002BE3BD /* SeasonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonListViewController.xib; sourceTree = "<group>"; };
@@ -458,6 +464,9 @@
 		5BF41DE91A3DBED8008A8A8E = {
 			isa = PBXGroup;
 			children = (
+				848426A61A6826BC0091FB26 /* Nunito-Bold.ttf */,
+				848426A71A6826BC0091FB26 /* Nunito-Light.ttf */,
+				848426A81A6826BC0091FB26 /* Nunito-Regular.ttf */,
 				84CE19241A623A5A002BE3BD /* Seasons */,
 				AF8A72DE1A507D070082773F /* addMore.png */,
 				AFADDC0A1A5596C1000C3C99 /* HudView.h */,
@@ -870,6 +879,7 @@
 				AFB244771A502B1200A28864 /* createSeasonBtnBG.png in Resources */,
 				5BC8262F1A40963700F11F37 /* FuturaTEELig.ttf in Resources */,
 				AF8A72CD1A5070B40082773F /* image5.png in Resources */,
+				848426AA1A6826BC0091FB26 /* Nunito-Light.ttf in Resources */,
 				AFB2441F1A50246000A28864 /* EventInfoViewController.xib in Resources */,
 				AFB244591A502AEA00A28864 /* main_create.png in Resources */,
 				AFB244471A5027C000A28864 /* menuIcon.png in Resources */,
@@ -885,6 +895,7 @@
 				AFB244811A502F2400A28864 /* backIcon1.png in Resources */,
 				AF44085B1A4F3367003D660B /* MenuViewController.xib in Resources */,
 				AF8A72D41A5070B40082773F /* headImage.png in Resources */,
+				848426A91A6826BC0091FB26 /* Nunito-Bold.ttf in Resources */,
 				5BF41E3F1A3DC73D008A8A8E /* screen1.png in Resources */,
 				AFDA8BF21A4C8AA400734DCB /* bgImgSplash_1.png in Resources */,
 				AF8A72C91A5070B40082773F /* image1.png in Resources */,
@@ -923,6 +934,7 @@
 				AF8A72CE1A5070B40082773F /* image6.png in Resources */,
 				5BF41E7A1A3DE034008A8A8E /* password@2x.png in Resources */,
 				AFB244621A502AF200A28864 /* uploadSec1@2x.png in Resources */,
+				848426AB1A6826BC0091FB26 /* Nunito-Regular.ttf in Resources */,
 				AF8A72C51A5070B40082773F /* sendNotiBtnBG3.png in Resources */,
 				AFB244951A50350200A28864 /* headBG23.png in Resources */,
 				AFB2449C1A50360200A28864 /* CalenderViewController.xib in Resources */,

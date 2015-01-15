@@ -23,8 +23,8 @@
     currrentFrame =self.view.frame;
     
     lblto.textColor= [UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
-    lblto.font=[UIFont fontWithName:@"Futura-Medium" size:18.0];
-    lblname.font=[UIFont fontWithName:@"Futura-Medium" size:14.0];
+    lblto.font=[UIFont fontWithName:@"Nunito-Regular" size:18.0];
+    lblname.font=[UIFont fontWithName:@"Nunito-Regular" size:14.0];
     txtUrl.delegate=self;
 
     // Do any additional setup after loading the view from its nib.
