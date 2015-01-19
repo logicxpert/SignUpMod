@@ -20,10 +20,10 @@
     [super viewDidLoad];
     arrayImges=[[NSMutableArray alloc]initWithObjects:@"Group-3.png",@"Group-3.png",@"Group-3.png",@"Group-3.png", nil];
     
-    lblDate.font=  [UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lblDate.font=  [UIFont fontWithName:@"Nunito-Light" size:15.0];
     tbldata.backgroundColor= [UIColor clearColor];
-    lblTitle2.font=  [UIFont fontWithName:@"Nunito-Regular" size:17.0];
-    lblTitle1.font=  [UIFont fontWithName:@"Nunito-Regular" size:17.0];
+    lblTitle2.font=  [UIFont fontWithName:@"Nunito-Bold" size:17.0];
+    lblTitle1.font=  [UIFont fontWithName:@"Nunito-Bold" size:17.0];
     
     
     // Do any additional setup after loading the view from its nib.

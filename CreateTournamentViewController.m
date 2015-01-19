@@ -7,9 +7,11 @@
 //
 
 #import "CreateTournamentViewController.h"
-//#import "SelectTimeViewController.h"
+#import "SelectTimeViewController.h"
 #import "EventlistViewController.h"
 #import "EventlistViewController.h"
+#import "AppDelegate.h"
+#import "CalenderViewController.h"
 
 @interface CreateTournamentViewController ()
 
@@ -73,6 +75,37 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate *app=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    
+    
+    
+    
+    
+    
+    if([app.isselected isEqualToString:@"start"])
+    {
+        
+        [btnstart setTitle:[[NSUserDefaults standardUserDefaults]valueForKey:@"startdate"] forState:UIControlStateNormal];
+        app.isselected=@"no";
+        
+        //  btnstart se [[NSUserDefaults standardUserDefaults]valueForKey:@"startdate"];
+    }
+    else  if([app.isselected isEqualToString:@"End"])
+    {
+        [btnEnd setTitle:[[NSUserDefaults standardUserDefaults]valueForKey:@"enddate"] forState:UIControlStateNormal];
+        
+        app.isselected=@"no";
+        
+        // [[NSUserDefaults standardUserDefaults] valueForKey:@"enddate"];
+        
+    }
+}
+
+
+
 -(IBAction)actiononProfilepic:(id)sender{
     UIActionSheet *actionsheetPhoto =[[UIActionSheet alloc] initWithTitle:@"Photo" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take a Photo",@"From Photo Library", nil];
     [actionsheetPhoto showInView:self.view];
@@ -114,6 +147,23 @@
          [txtNotificationMessage resignFirstResponder];
     }
     
+}
+-(IBAction)actiononStartEvent:(id)sender
+{
+    CalenderViewController *objcal=[[CalenderViewController alloc]init];
+    AppDelegate *app=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    app.isstart=YES;
+    
+    [self presentViewController:objcal animated:YES completion:nil];
+    
+}
+
+-(IBAction)actiononEnddate:(id)sender
+{
+    CalenderViewController *objcal=[[CalenderViewController alloc]init];
+    AppDelegate *app=(AppDelegate *)[UIApplication sharedApplication].delegate;
+    app.isEnd=YES;
+    [self presentViewController:objcal animated:YES completion:nil];
 }
 
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
@@ -197,9 +247,9 @@
 -(IBAction)actionOnStartTime:(id)sender
 
 {
-   //SelectTimeViewController *objSelect=[[SelectTimeViewController alloc]init];
+   SelectTimeViewController *objSelect=[[SelectTimeViewController alloc]init];
     
-    //[self presentViewController:objSelect animated:YES completion:nil];
+    [self presentViewController:objSelect animated:YES completion:nil];
     
 }
 

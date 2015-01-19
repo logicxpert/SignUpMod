@@ -33,16 +33,17 @@
     IBOutlet UITextView *txtTwitterMessage;
     
     
-    IBOutlet UILabel *lblWinner1;
-    IBOutlet UILabel *lblWinner2;
-    IBOutlet UILabel *lblWinner3;
-    IBOutlet UILabel *lblWinner4;
-    IBOutlet UILabel *lblWinner5;
-    IBOutlet UILabel *lblWinner6;
-    IBOutlet UILabel *lblWinner7;
-    IBOutlet UILabel *lblWinner8;
+    IBOutlet UIButton *btnWinner1;
+    IBOutlet UIButton *btnWinner2;
+    IBOutlet UIButton   *btnWinner3;
+    IBOutlet UIButton *btnWinner4;
+    IBOutlet UIButton *btnWinner5;
+    IBOutlet UIButton *btnWinner6;
+    IBOutlet UIButton *btnWinner7;
+    IBOutlet UIButton *btnWinner8;
     
-
+    IBOutlet UIButton *btnWinner9;
+    IBOutlet UIButton *btnWinner10;
     
     IBOutlet UILabel *lblWinners;
     IBOutlet UILabel *lbllossers;
@@ -56,6 +57,9 @@
     
     
 }
+
+-(IBAction)actiononsetTime:(id)sender;
 -(IBAction)actiononBack:(id)sender;
 -(IBAction)actionONtitle:(id)sender;
+-(IBAction)actiononEdit:(id)sender;
 @end

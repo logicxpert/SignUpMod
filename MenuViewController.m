@@ -22,17 +22,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    btnEvents.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    btnFollowing.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
+    btnEvents.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    btnFollowing.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
 
-    btnLogout.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    btnMyteams.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    btnSeasons.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    btnSettings.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    btnSynctoServver.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    btntournamnets.titleLabel.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    lblName.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
-    lblteamName.font=[UIFont fontWithName:@"Nunito-Regular" size:20.0];
+    btnLogout.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    btnMyteams.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    btnSeasons.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    btnSettings.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    btnSynctoServver.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    btntournamnets.titleLabel.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    lblName.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
+    lblteamName.font=[UIFont fontWithName:@"Nunito-Light" size:13.0];
     lblteamName.textColor=[UIColor colorWithRed:124/255.0 green:198/255.0 blue:228/255.0 alpha:1];
     
     [btnEvents setTitleColor:[UIColor colorWithRed:170/255.0 green:170/255.0 blue:170/255.0 alpha:1] forState:UIControlStateNormal];

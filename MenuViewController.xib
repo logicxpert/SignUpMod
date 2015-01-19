@@ -123,6 +123,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePic1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-Q7-ciT">
                     <rect key="frame" x="102" y="63" width="65" height="65"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZHr-cy-LlW">
+                    <rect key="frame" x="19" y="200" width="240" height="1"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -130,6 +133,7 @@
         </view>
     </objects>
     <resources>
+        <image name="bottomLine.png" width="309" height="2"/>
         <image name="mainBG3.png" width="480" height="800"/>
         <image name="profilePic1.png" width="106" height="106"/>
         <image name="stcBG.png" width="412" height="70"/>

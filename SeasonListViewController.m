@@ -34,7 +34,7 @@
     tblList.dataSource=self;
     tblList.backgroundColor=[UIColor clearColor];
     
-    arrayImges=[[NSMutableArray alloc]initWithObjects:@"Group-3.png",@"Group-3.png",@"Group-3.png",@"Group-3.png", nil];
+   // arrayImges=[[NSMutableArray alloc]initWithObjects:@"Group-3.png",@"Group-3.png",@"Group-3.png",@"Group-3.png", nil];
     arrayData=[[NSMutableArray alloc]init];
     
     
@@ -64,14 +64,14 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [tblList reloadData];
     
     
-//    [self showHUD];
+    
+    [self showHUD];
+   
 //    
 //    
-//    
-//    [self performSelector:@selector(callservice) withObject:nil afterDelay:0.5];
+    [self performSelector:@selector(callservice) withObject:nil afterDelay:0.5];
     
 }
 
@@ -113,7 +113,7 @@
     
     NSMutableURLRequest *mRequest = [[NSMutableURLRequest alloc]
                                      initWithURL:[NSURL URLWithString:[NSString
-                                                                       stringWithFormat:@"http://54.68.218.212:8080/tournamentapis/web/srf/services/main/event/state/all?empty=false"]]];
+                                                                       stringWithFormat:@"http://54.68.218.212:8080/tournamentapis/web/srf/services/main/season/state/all?empty=false"]]];
     
     
     NSData* data = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
@@ -159,7 +159,7 @@
         [tblList reloadData];
     }
     else{
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Warning" message:@"No Events" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Warning" message:@"No Seasons" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
         [alert show];
         
     }
@@ -230,7 +230,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 5;   //count number of row from counting array hear cataGorry is An Array
+    return [arrayData count];   //count number of row from counting array hear cataGorry is An Array
 }
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -244,7 +244,7 @@
 {
     static NSString *MyIdentifier = @"MyIdentifier";
     
-    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"%d",indexPath.row]];
+    ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"%ld",(long)indexPath.row]];
     
     if (cell == nil)
     {
@@ -271,7 +271,7 @@
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
     
     
-        cell.lblEventName.text=@"Cricket World cup";
+        cell.lblEventName.text=[[arrayData objectAtIndex:indexPath.row]valueForKey:@"description"];
    
     
     

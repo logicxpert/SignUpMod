@@ -34,22 +34,24 @@
     lblTile3.font= [UIFont fontWithName:@"Nunito-Light" size:11.0];
     
     
-    lblWinner1.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner2.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner3.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner4.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner5.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner6.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner7.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
-    lblWinner8.font= [UIFont fontWithName:@"Nunito-Bold" size:20.0];
+    btnWinner1.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner2.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner3.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner4.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner5.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner6.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner7.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner8.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner9.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
+    btnWinner10.titleLabel.font= [UIFont fontWithName:@"Nunito-Bold" size:15.0];
     
-    lblWinners.font= [UIFont fontWithName:@"Nunito-Regular" size:15.0];
-    lbllossers.font= [UIFont fontWithName:@"Nunito-Regular" size:15.0];
+    lblWinners.font= [UIFont fontWithName:@"Nunito-Light" size:15.0];
+    lbllossers.font= [UIFont fontWithName:@"Nunito-Light" size:15.0];
     lbllossers.textColor=[UIColor darkGrayColor];
     
   
     
-    scrData.frame=CGRectMake(0, 302, 320, 600);
+    scrData.frame=CGRectMake(0, 300, 320, 600);
     scrData.contentSize=CGSizeMake(320, 600);
     headBg.hidden=YES;
     
@@ -168,6 +170,7 @@
 }
 
 
+
 -(void)handleSwipedown:(UISwipeGestureRecognizer *)swipe
 {
     lblTile1.hidden=NO;
@@ -186,9 +189,16 @@
     
     
     
-    scrData.frame=CGRectMake(0, 302, 320, 568);
+    scrData.frame=CGRectMake(0, 300, 320, 568);
     scrData.contentSize=CGSizeMake(320, 700);
 
+}
+
+-(IBAction)actiononEdit:(id)sender
+{
+    EdittournamentViewController *objEdit=[[EdittournamentViewController alloc]init];
+    [self.navigationController pushViewController:objEdit animated:YES];
+    
 }
 -(void)handleSwipe:(UISwipeGestureRecognizer *)swipe {
     

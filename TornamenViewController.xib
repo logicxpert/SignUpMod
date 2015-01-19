@@ -6,6 +6,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TornamenViewController">
             <connections>
+                <outlet property="btnWinner1" destination="Kte-wD-Rfg" id="XqT-6A-7Jf"/>
+                <outlet property="btnWinner10" destination="8Pc-LI-Ujg" id="wOa-WK-ntY"/>
+                <outlet property="btnWinner2" destination="CnU-W3-nJi" id="WV1-MH-kSO"/>
+                <outlet property="btnWinner3" destination="SmJ-ZB-WwH" id="qsN-1G-XhU"/>
+                <outlet property="btnWinner4" destination="ayR-HQ-4Dh" id="9oN-It-bL0"/>
+                <outlet property="btnWinner5" destination="iKL-xC-8pi" id="XiO-XS-BTg"/>
+                <outlet property="btnWinner6" destination="G4F-QH-7mb" id="Atv-w9-Nxd"/>
+                <outlet property="btnWinner7" destination="ykz-mP-6kh" id="Z8y-Gc-Ym5"/>
+                <outlet property="btnWinner8" destination="o1T-lV-MEH" id="WAk-Yi-PfC"/>
+                <outlet property="btnWinner9" destination="q9I-lk-Gvh" id="e2m-yO-F0K"/>
                 <outlet property="headBg" destination="4yB-Px-mqi" id="fpU-o6-Njb"/>
                 <outlet property="imgbg" destination="Z0B-jv-RVo" id="EZj-1g-cMq"/>
                 <outlet property="lblSubTile" destination="Nre-ar-Vmv" id="eFN-p0-5Sg"/>
@@ -13,14 +23,6 @@
                 <outlet property="lblTile1" destination="m6q-xj-SS1" id="X2U-iS-hOI"/>
                 <outlet property="lblTile2" destination="LUJ-ha-iZP" id="IoM-w5-P6V"/>
                 <outlet property="lblTile3" destination="d2Q-HI-RcV" id="vcV-Ah-61T"/>
-                <outlet property="lblWinner1" destination="qNV-eV-wpS" id="OeH-DB-54u"/>
-                <outlet property="lblWinner2" destination="eDb-A3-2w2" id="hWr-f8-I1p"/>
-                <outlet property="lblWinner3" destination="BSc-Xf-xYH" id="r37-0q-aCI"/>
-                <outlet property="lblWinner4" destination="nai-U3-HYN" id="xiX-qY-6jM"/>
-                <outlet property="lblWinner5" destination="NDh-ST-Q2X" id="t4l-GM-x9j"/>
-                <outlet property="lblWinner6" destination="tek-hc-TOl" id="cey-qs-q1e"/>
-                <outlet property="lblWinner7" destination="Hrp-3M-ebe" id="Ude-ng-UFD"/>
-                <outlet property="lblWinner8" destination="h9B-MF-qtq" id="QJI-Xl-ZHR"/>
                 <outlet property="lblWinners" destination="5af-Qx-78k" id="Vct-QS-enQ"/>
                 <outlet property="lbllossers" destination="0hk-X1-rY1" id="LGM-aL-Ktr"/>
                 <outlet property="scrData" destination="ma2-k2-N2f" id="3o9-zO-pWL"/>
@@ -37,9 +39,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-sD-6G5">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headImage5.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z0B-jv-RVo">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                 </imageView>
@@ -47,7 +46,7 @@
                     <rect key="frame" x="0.0" y="200" width="320" height="100"/>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw7-FI-AOs">
-                    <rect key="frame" x="20" y="36" width="30" height="30"/>
+                    <rect key="frame" x="20" y="38" width="25" height="25"/>
                     <state key="normal" backgroundImage="back_btn2.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -62,10 +61,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQ4-Wa-kS0">
-                    <rect key="frame" x="278" y="40" width="30" height="30"/>
+                    <rect key="frame" x="278" y="39" width="25" height="25"/>
                     <state key="normal" backgroundImage="menuBtn2.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="actiononEdit:" destination="-1" eventType="touchUpInside" id="0az-gk-ql1"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="June 15,2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nre-ar-Vmv">
                     <rect key="frame" x="75" y="62" width="180" height="21"/>
@@ -106,160 +108,153 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="88" y="251"/>
+            <point key="canvasLocation" x="125" y="70"/>
         </view>
         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="ma2-k2-N2f">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="541"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headingBG2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4yB-Px-mqi">
-                    <rect key="frame" x="0.0" y="1" width="320" height="55"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-sD-6G5">
+                    <rect key="frame" x="0.0" y="-13" width="320" height="568"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0F-fP-Iu6"/>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tg5-AO-QXM">
-                    <rect key="frame" x="20" y="459" width="300" height="102"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manoj" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-MF-qtq">
-                    <rect key="frame" x="25" y="527" width="126" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-QI-q9x">
-                    <rect key="frame" x="26" y="523" width="164" height="30"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="xpU-tL-ViR"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sachin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-3M-ebe">
-                    <rect key="frame" x="25" y="469" width="121" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3T-0u-5XY">
-                    <rect key="frame" x="26" y="465" width="164" height="30"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="gAZ-61-tWL"/>
-                    </connections>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="E7W-1H-SdL">
-                    <rect key="frame" x="19" y="342" width="300" height="100"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sachin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tek-hc-TOl">
-                    <rect key="frame" x="25" y="410" width="121" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-xk-rEt">
-                    <rect key="frame" x="24" y="405" width="164" height="30"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="D7l-iM-F3e"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manoj" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDh-ST-Q2X">
-                    <rect key="frame" x="25" y="352" width="126" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6m-08-PGo">
-                    <rect key="frame" x="24" y="347" width="164" height="30"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WINNER'S BRACKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5af-Qx-78k">
-                    <rect key="frame" x="8" y="11" width="156" height="38"/>
+                    <rect key="frame" x="8" y="7" width="156" height="38"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOSER'S BRACKET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hk-X1-rY1">
-                    <rect key="frame" x="172" y="19" width="159" height="21"/>
+                    <rect key="frame" x="172" y="15" width="159" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="1wy-TO-6kj">
-                    <rect key="frame" x="20" y="106" width="300" height="100"/>
+                    <rect key="frame" x="20" y="65" width="300" height="80"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manoj" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNV-eV-wpS">
-                    <rect key="frame" x="25" y="116" width="126" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sachin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-A3-2w2">
-                    <rect key="frame" x="25" y="174" width="121" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-JL-ysk">
-                    <rect key="frame" x="25" y="172" width="164" height="30"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="Rkl-YM-7cs"/>
-                    </connections>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="AFV-n7-is9">
-                    <rect key="frame" x="20" y="225" width="300" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headingBG2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4yB-Px-mqi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sachin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nai-U3-HYN">
-                    <rect key="frame" x="25" y="291" width="121" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDE-Em-GoA">
-                    <rect key="frame" x="25" y="288" width="164" height="30"/>
-                    <state key="normal">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-wD-Rfg">
+                    <rect key="frame" x="28" y="65" width="162" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Sachin">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="hD4-Yf-oRy"/>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="J8L-Fa-66M"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manoj" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSc-Xf-xYH">
-                    <rect key="frame" x="25" y="235" width="126" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="173-Gs-0s4">
-                    <rect key="frame" x="25" y="232" width="164" height="30"/>
-                    <state key="normal">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnU-W3-nJi">
+                    <rect key="frame" x="28" y="115" width="154" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Dhoni">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="XtE-5e-DaH"/>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="FxE-Ly-ocx"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fON-sq-Zoj">
-                    <rect key="frame" x="25" y="112" width="164" height="30"/>
-                    <state key="normal">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="MeM-TT-coR">
+                    <rect key="frame" x="20" y="157" width="300" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmJ-ZB-WwH">
+                    <rect key="frame" x="28" y="157" width="162" height="30"/>
+                    <state key="normal" title="Sachin">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="WJt-ow-cdp"/>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="VgD-rX-9Se"/>
+                        <action selector="actiononBack:" destination="-1" eventType="touchUpInside" id="gKI-7L-har"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayR-HQ-4Dh">
+                    <rect key="frame" x="28" y="207" width="154" height="30"/>
+                    <state key="normal" title="Dhoni">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="1CL-o6-w2u"/>
+                        <action selector="actiononBack:" destination="-1" eventType="touchUpInside" id="8il-cH-F3k"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0OL-NY-ZM9">
+                    <rect key="frame" x="20" y="251" width="300" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKL-xC-8pi">
+                    <rect key="frame" x="28" y="251" width="162" height="30"/>
+                    <state key="normal" title="Sachin">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="LdB-2L-JXH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4F-QH-7mb">
+                    <rect key="frame" x="28" y="301" width="154" height="30"/>
+                    <state key="normal" title="Dhoni">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="Sw7-A7-4Sn"/>
+                        <action selector="actiononBack:" destination="-1" eventType="touchUpInside" id="Kzr-h4-F1M"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="NZv-eZ-Dyn">
+                    <rect key="frame" x="19" y="341" width="300" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykz-mP-6kh">
+                    <rect key="frame" x="27" y="341" width="162" height="30"/>
+                    <state key="normal" title="Sachin">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="ooo-gR-02v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1T-lV-MEH">
+                    <rect key="frame" x="27" y="391" width="154" height="30"/>
+                    <state key="normal" title="Dhoni">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="KyB-5e-rwl"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="completeBoxes2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gBk-Gl-7e8">
+                    <rect key="frame" x="19" y="441" width="300" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9I-lk-Gvh">
+                    <rect key="frame" x="27" y="441" width="162" height="30"/>
+                    <state key="normal" title="Sachin">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="rrd-YG-MGi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pc-LI-Ujg">
+                    <rect key="frame" x="27" y="491" width="154" height="30"/>
+                    <state key="normal" title="Dhoni">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionONtitle:" destination="-1" eventType="touchUpInside" id="uLt-dk-bdq"/>
                     </connections>
                 </button>
             </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="459" y="57"/>
+            <point key="canvasLocation" x="285" y="-238.5"/>
         </scrollView>
         <view contentMode="scaleToFill" id="vRJ-p4-PjA">
             <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>

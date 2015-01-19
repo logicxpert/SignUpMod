@@ -67,6 +67,13 @@
 		848426A91A6826BC0091FB26 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848426A61A6826BC0091FB26 /* Nunito-Bold.ttf */; };
 		848426AA1A6826BC0091FB26 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848426A71A6826BC0091FB26 /* Nunito-Light.ttf */; };
 		848426AB1A6826BC0091FB26 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848426A81A6826BC0091FB26 /* Nunito-Regular.ttf */; };
+		84A4E63D1A6C350D00279049 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E63C1A6C350D00279049 /* TimeTableViewController.m */; };
+		84A4E6411A6C373600279049 /* SelectTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E63F1A6C373600279049 /* SelectTimeViewController.m */; };
+		84A4E6421A6C373600279049 /* SelectTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E6401A6C373600279049 /* SelectTimeViewController.xib */; };
+		84A4E64A1A6C374B00279049 /* KGGTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E6441A6C374B00279049 /* KGGTimePickerView.m */; };
+		84A4E64B1A6C374B00279049 /* KGGTimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A4E6451A6C374B00279049 /* KGGTimePickerView.xib */; };
+		84A4E64C1A6C374B00279049 /* KGGTimePickerConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E6471A6C374B00279049 /* KGGTimePickerConsts.m */; };
+		84A4E64D1A6C374B00279049 /* KGGLabeledPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4E6491A6C374B00279049 /* KGGLabeledPickerView.m */; };
 		84CE19281A623A7B002BE3BD /* SeasonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE19261A623A7B002BE3BD /* SeasonListViewController.m */; };
 		84CE19291A623A7B002BE3BD /* SeasonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CE19271A623A7B002BE3BD /* SeasonListViewController.xib */; };
 		84CE192E1A623DF9002BE3BD /* CreateSesonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE192C1A623DF9002BE3BD /* CreateSesonViewController.m */; };
@@ -286,6 +293,18 @@
 		848426A61A6826BC0091FB26 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		848426A71A6826BC0091FB26 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		848426A81A6826BC0091FB26 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		84A4E63B1A6C350D00279049 /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		84A4E63C1A6C350D00279049 /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		84A4E63E1A6C373600279049 /* SelectTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTimeViewController.h; sourceTree = "<group>"; };
+		84A4E63F1A6C373600279049 /* SelectTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTimeViewController.m; sourceTree = "<group>"; };
+		84A4E6401A6C373600279049 /* SelectTimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTimeViewController.xib; sourceTree = "<group>"; };
+		84A4E6431A6C374B00279049 /* KGGTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGTimePickerView.h; sourceTree = "<group>"; };
+		84A4E6441A6C374B00279049 /* KGGTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGTimePickerView.m; sourceTree = "<group>"; };
+		84A4E6451A6C374B00279049 /* KGGTimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGGTimePickerView.xib; sourceTree = "<group>"; };
+		84A4E6461A6C374B00279049 /* KGGTimePickerConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGTimePickerConsts.h; sourceTree = "<group>"; };
+		84A4E6471A6C374B00279049 /* KGGTimePickerConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGTimePickerConsts.m; sourceTree = "<group>"; };
+		84A4E6481A6C374B00279049 /* KGGLabeledPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGLabeledPickerView.h; sourceTree = "<group>"; };
+		84A4E6491A6C374B00279049 /* KGGLabeledPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGLabeledPickerView.m; sourceTree = "<group>"; };
 		84CE19251A623A7B002BE3BD /* SeasonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeasonListViewController.h; sourceTree = "<group>"; };
 		84CE19261A623A7B002BE3BD /* SeasonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeasonListViewController.m; sourceTree = "<group>"; };
 		84CE19271A623A7B002BE3BD /* SeasonListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonListViewController.xib; sourceTree = "<group>"; };
@@ -464,6 +483,18 @@
 		5BF41DE91A3DBED8008A8A8E = {
 			isa = PBXGroup;
 			children = (
+				84A4E63E1A6C373600279049 /* SelectTimeViewController.h */,
+				84A4E63F1A6C373600279049 /* SelectTimeViewController.m */,
+				84A4E6401A6C373600279049 /* SelectTimeViewController.xib */,
+				84A4E6431A6C374B00279049 /* KGGTimePickerView.h */,
+				84A4E6441A6C374B00279049 /* KGGTimePickerView.m */,
+				84A4E6451A6C374B00279049 /* KGGTimePickerView.xib */,
+				84A4E6461A6C374B00279049 /* KGGTimePickerConsts.h */,
+				84A4E6471A6C374B00279049 /* KGGTimePickerConsts.m */,
+				84A4E6481A6C374B00279049 /* KGGLabeledPickerView.h */,
+				84A4E6491A6C374B00279049 /* KGGLabeledPickerView.m */,
+				84A4E63B1A6C350D00279049 /* TimeTableViewController.h */,
+				84A4E63C1A6C350D00279049 /* TimeTableViewController.m */,
 				848426A61A6826BC0091FB26 /* Nunito-Bold.ttf */,
 				848426A71A6826BC0091FB26 /* Nunito-Light.ttf */,
 				848426A81A6826BC0091FB26 /* Nunito-Regular.ttf */,
@@ -933,6 +964,7 @@
 				AF8A72CF1A5070B40082773F /* image7.png in Resources */,
 				AF8A72CE1A5070B40082773F /* image6.png in Resources */,
 				5BF41E7A1A3DE034008A8A8E /* password@2x.png in Resources */,
+				84A4E6421A6C373600279049 /* SelectTimeViewController.xib in Resources */,
 				AFB244621A502AF200A28864 /* uploadSec1@2x.png in Resources */,
 				848426AB1A6826BC0091FB26 /* Nunito-Regular.ttf in Resources */,
 				AF8A72C51A5070B40082773F /* sendNotiBtnBG3.png in Resources */,
@@ -942,6 +974,7 @@
 				AF8A72CC1A5070B40082773F /* image4.png in Resources */,
 				AF60FB091A505C8D00DB8984 /* mainBg7.png in Resources */,
 				5BF41E8E1A3DF3FC008A8A8E /* sinMeUp.png in Resources */,
+				84A4E64B1A6C374B00279049 /* KGGTimePickerView.xib in Resources */,
 				AF60FB151A506DE600DB8984 /* bottomLineLarge55.png in Resources */,
 				AFB244AA1A5044E500A28864 /* done_btn.png in Resources */,
 				AFB244A41A50446200A28864 /* prev_btn.png in Resources */,
@@ -1062,14 +1095,19 @@
 				AFB244551A50297900A28864 /* CreateEventViewController.m in Sources */,
 				AF60FB061A505C6000DB8984 /* TournamentlistViewController.m in Sources */,
 				84CE19281A623A7B002BE3BD /* SeasonListViewController.m in Sources */,
+				84A4E6411A6C373600279049 /* SelectTimeViewController.m in Sources */,
+				84A4E64D1A6C374B00279049 /* KGGLabeledPickerView.m in Sources */,
 				5BF41E2C1A3DC49E008A8A8E /* LoginViewController.m in Sources */,
 				AFB244201A50246000A28864 /* EventlistViewController.m in Sources */,
 				AFB2449F1A50360F00A28864 /* CKCalendarView.m in Sources */,
 				AF8A72DC1A507CF20082773F /* EdittournamentViewController.m in Sources */,
 				AFB244331A5024B700A28864 /* AddStaffTableViewCell.m in Sources */,
+				84A4E63D1A6C350D00279049 /* TimeTableViewController.m in Sources */,
+				84A4E64C1A6C374B00279049 /* KGGTimePickerConsts.m in Sources */,
 				5BF41E5A1A3DDFA6008A8A8E /* UserLoginViewController.m in Sources */,
 				84CE193A1A6245C4002BE3BD /* EditseasonViewController.m in Sources */,
 				5BF41DFB1A3DBED8008A8A8E /* AppDelegate.m in Sources */,
+				84A4E64A1A6C374B00279049 /* KGGTimePickerView.m in Sources */,
 				5BF41DF81A3DBED8008A8A8E /* main.m in Sources */,
 				AF44085A1A4F3367003D660B /* MenuViewController.m in Sources */,
 				AFB244231A50247000A28864 /* EventInfoViewController.m in Sources */,

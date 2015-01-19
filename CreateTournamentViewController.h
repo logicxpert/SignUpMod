@@ -34,7 +34,9 @@
     IBOutlet UILabel *lblGametype;
     UIImagePickerController *imagePickerController;
     
-
+    IBOutlet UIButton *btnstart;
+    IBOutlet UIButton *btnEnd;
+   
     
     
     
@@ -44,6 +46,9 @@
 -(IBAction)actionOnStartTime:(id)sender;
 -(IBAction)actiononRight:(id)sender;
 -(IBAction)actiononback:(id)sender;
+-(IBAction)actiononStartEvent:(id)sender;
+-(IBAction)actiononEnddate:(id)sender;
+-(IBAction)startTime:(id)sender;
 
 
 @end

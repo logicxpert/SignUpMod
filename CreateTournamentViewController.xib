@@ -6,7 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateTournamentViewController">
             <connections>
+                <outlet property="btnEnd" destination="j72-hh-VhD" id="qtJ-jB-gOL"/>
                 <outlet property="btnProfilepic" destination="c6p-rA-lBu" id="8NP-I9-AI6"/>
+                <outlet property="btnstart" destination="fbO-e5-4Mi" id="C55-Nj-NPx"/>
                 <outlet property="lblGametype" destination="E1g-UH-zFX" id="jUs-1b-FlS"/>
                 <outlet property="lblRoundlbl" destination="CLo-rz-YMw" id="7is-Aa-7NT"/>
                 <outlet property="lblSingles" destination="enI-l2-co9" id="ldp-9S-AVl"/>
@@ -166,6 +168,9 @@
                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="actiononStartEvent:" destination="-1" eventType="touchUpInside" id="vmp-DZ-R2b"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W12-eS-9JO">
                     <rect key="frame" x="149" y="523" width="23" height="21"/>
@@ -186,6 +191,9 @@
                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="actiononEnddate:" destination="-1" eventType="touchUpInside" id="9wH-MN-wfe"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomLineLarge55.png" id="9cp-Pn-487">
                     <rect key="frame" x="20" y="589" width="120" height="1"/>
@@ -250,15 +258,6 @@
                         <action selector="actiononProfilepic:" destination="-1" eventType="touchUpInside" id="Ik9-Ya-lml"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J3a-Fw-h9K">
-                    <rect key="frame" x="179" y="565" width="108" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                    <state key="normal" title="Ending hour">
-                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="jPi-40-sdc">
                     <rect key="frame" x="31" y="700" width="255" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -266,6 +265,15 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J3a-Fw-h9K">
+                    <rect key="frame" x="178" y="565" width="108" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <state key="normal" title="Ending hour">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
